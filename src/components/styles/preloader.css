@@ -1,0 +1,87 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out;
+}
+
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  --bg-color: #212121;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+}
+
+.loader {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.words {
+  overflow: hidden;
+  height: 30px; /* Высота одного слова */
+  position: relative;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+  pointer-events: none;
+}
+
+.word {
+  display: block;
+  height: 30px;
+  padding-left: 6px;
+  color: #956afa;
+  animation: wordSwitch 6s linear infinite;
+}
+
+@keyframes wordSwitch {
+  0% {
+    transform: translateY(0%);
+  }
+  33.333% {
+    transform: translateY(-100%);
+  }
+  66.666% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
