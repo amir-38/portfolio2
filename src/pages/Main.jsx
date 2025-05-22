@@ -132,7 +132,7 @@ const Main = () => {
 
             {isLoaded && !activePage && (
                 <div className="overlay-content">
-                    <h1>Welcome to My Portfolio</h1>
+                    <h1>WELCOME TO MY PORTFOLIO</h1>
                     <p>Frontend Developer | React | CSS</p>
                 </div>
             )}

@@ -14,22 +14,22 @@ const Navbar = () => {
             <ul>
                 <li>
                     <Link to="/" onMouseEnter={playHover}>
-                        Main
+                        MAIN
                     </Link>
                 </li>
                 <li>
                     <Link to="/about" onMouseEnter={playHover}>
-                        About
+                        ABOUT
                     </Link>
                 </li>
                 <li>
                     <Link to="/projects" onMouseEnter={playHover}>
-                        Projects
+                        PROJECTS
                     </Link>
                 </li>
                 <li>
                     <Link to="/contact" onMouseEnter={playHover}>
-                        Contact
+                        CONTACTS
                     </Link>
                 </li>
             </ul>

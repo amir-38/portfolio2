@@ -6,6 +6,8 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Preloader from './components/Preloader'
+import './components/styles/fonts.css'
+import './App.css'
 
 function App() {
     const [loading, setLoading] = useState(true)
